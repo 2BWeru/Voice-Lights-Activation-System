@@ -8,7 +8,9 @@ __Video__
 https://github.com/2BWeru/Voice-Lights-Activation-System/assets/86661774/bf7f78ef-f5f8-44c6-ad09-11fcc43dcc2e
 
 
-Uploading WhatsApp Video 2024-04-10 at 7.20.51 PM.mp4…
+
+https://github.com/2BWeru/Voice-Lights-Activation-System/assets/86661774/c1eb91be-5656-479b-ab23-7784dcf5420e
+
 
 Project Team
 
