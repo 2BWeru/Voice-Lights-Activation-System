@@ -44,4 +44,36 @@ void AllOn() {
   digitalWrite(YELLOW0, HIGH);
 }
 
+// Define functions to turn off the LEDs
+void RedOff() {
+    digitalWrite(RED, LOW);
+    digitalWrite(RED0, LOW);
+}
+
+void GreenOff() {
+    digitalWrite(GREEN, LOW);
+    digitalWrite(GREEN0, LOW);
+}
+
+void BlueOff() {
+    digitalWrite(BLUE, LOW);
+    digitalWrite(BLUE0, LOW);
+}
+
+void YellowOff() {
+    digitalWrite(YELLOW, LOW);
+    digitalWrite(YELLOW0, LOW);
+}
+
+void AllOff() {
+    digitalWrite(RED, LOW);
+    digitalWrite(GREEN, LOW);
+    digitalWrite(BLUE, LOW);
+    digitalWrite(YELLOW, LOW);
+    digitalWrite(RED0, LOW);
+    digitalWrite(GREEN0, LOW);
+    digitalWrite(BLUE0, LOW);
+    digitalWrite(YELLOW0, LOW);
+}
+
 
