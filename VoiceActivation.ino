@@ -76,7 +76,6 @@ void AllOff() {
     digitalWrite(YELLOW0, LOW);
 }
 
-
 void setup() {
     // Initialize serial communication
     Serial.begin(9600);
@@ -90,6 +89,48 @@ void setup() {
     pinMode(GREEN0, OUTPUT);
     pinMode(BLUE0, OUTPUT);
     pinMode(YELLOW0, OUTPUT);
+}
+
+void loop() {
+    // Check if there is data available on the serial port
+    while (Serial.available()) {
+        // Read a character from the serial port
+        char c = Serial.read();
+        
+        // Break the loop if the newline character is encountered
+        if (c == '\n')
+            break;
+        
+        // Concatenate the received character to the 'voice' variable
+        voice += c;
+    }
+
+    // Process voice commands to control LEDs
+    if (voice.length() > 0) {
+        if (voice == "on" || voice == "all")
+            AllOn();
+        else if (voice == "off" || voice == "all off")
+            AllOff();
+        else if (voice == "red" || voice == "Red on")
+            RedOn();
+        else if (voice == "red off")
+            RedOff();
+        else if (voice == "green" || voice == "green on")
+            GreenOn();
+        else if (voice == "green off")
+            GreenOff();
+        else if (voice == "blue" || voice == "blue on")
+            BlueOn();
+        else if (voice == "blue off")
+            BlueOff();
+        else if (voice == "yellow" || voice == "yellow on")
+            YellowOn();
+        else if (voice == "yellow off")
+            YellowOff();
+        
+        // Reset the 'voice' variable
+        voice = "";
+    }
 }
 
 
