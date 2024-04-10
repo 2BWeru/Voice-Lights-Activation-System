@@ -77,3 +77,19 @@ void AllOff() {
 }
 
 
+void setup() {
+    // Initialize serial communication
+    Serial.begin(9600);
+    
+    // Set pin modes for LEDs
+    pinMode(RED, OUTPUT);
+    pinMode(GREEN, OUTPUT);
+    pinMode(BLUE, OUTPUT);
+    pinMode(YELLOW, OUTPUT);
+    pinMode(RED0, OUTPUT);
+    pinMode(GREEN0, OUTPUT);
+    pinMode(BLUE0, OUTPUT);
+    pinMode(YELLOW0, OUTPUT);
+}
+
+
